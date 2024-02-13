@@ -7,13 +7,13 @@ const AppLayout = ({ children }) => {
   return (
     <>
       {/* component navbar */}
-      <Navbar/>
-      
+      <Navbar />
+
       {/* content dari router, jika ada children/outlet */}
       <div className="overflow-x-hidden">
         {children ? children : <Outlet />}
       </div>
-      
+
       {/* component footer */}
       <Footer />
     </>
